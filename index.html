@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="uz">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Tekin UC DED</title>
 
 <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
 
 <div class="app">
@@ -16,17 +20,16 @@
 
 <h1>🎁 Tekin UC DED</h1>
 
-<div class="coins">
+<div class="coin-box">
 
-<span>🪙</span>
-
-<span id="coinCount">589</span>
+🪙 <span id="coin">0</span>
 
 </div>
 
 </header>
 
-<section class="wheel-section">
+
+<div class="wheel-area">
 
 <div class="pointer"></div>
 
@@ -42,89 +45,73 @@
 
 </button>
 
-<div id="timer">
+<p id="timer">
 
 Tayyor
 
+</p>
+
 </div>
 
-</section>
-
-<section class="missions">
-
-<h2>📋 Missiyalar</h2>
 
 <div class="mission">
 
-<div>
+<h2>📢 Kanalga obuna bo'l</h2>
 
-📢 Kanalga obuna bo'l
+<a
+id="joinBtn"
+href="https://t.me/"
+target="_blank">
+
+<button>
+
+Obuna bo'lish
+
+</button>
+
+</a>
 
 </div>
 
-<button id="subMission">
 
-+100
+<div class="reward">
+
+<h2>
+
+🎁 UC olish
+
+</h2>
+
+<div class="reward-card">
+
+<h3>
+
+60 UC
+
+</h3>
+
+<p>
+
+Kerak: <b>589 Coin</b>
+
+</p>
+
+<button id="claimBtn">
+
+UC olish
 
 </button>
 
 </div>
 
-<div class="mission">
-
-<div>
-
-🎁 Kunlik bonus
-
 </div>
-
-<button id="dailyMission">
-
-Olish
-
-</button>
-
-</div>
-
-</section>
-
-<section class="profile">
-
-<h2>👤 Profil</h2>
-
-<p>ID:
-<span id="playerId">000001</span>
-</p>
-
-<p>Spinlar:
-<span id="spinCount">0</span>
-</p>
-
-<p>Ochko:
-<span id="profileCoins">589</span>
-</p>
-
-</section>
-
-<section class="leaderboard">
-
-<h2>🏆 Reyting</h2>
-
-<ol id="leaderboard">
-
-<li>Sen — 589 🪙</li>
-
-</ol>
-
-</section>
 
 </div>
 
 <script src="data.js"></script>
 <script src="wheel.js"></script>
-<script src="missions.js"></script>
-<script src="profile.js"></script>
 <script src="script.js"></script>
 
 </body>
+
 </html>
